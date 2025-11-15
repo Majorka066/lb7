@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная 7 — jQuery vs Vanilla JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI (для задачи D) -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <nav class="main-nav">
+        <a href="#section-1">Секция 1</a>
+        <a href="#section-2">Секция 2</a>
+        <a href="#tabs">Вкладки</a>
+        <a href="#ajax">Цитата</a>
+        <a href="#ui">jQuery UI</a>
+        <a href="#gallery">Галерея</a>
+    </nav>
+    <h1>ЛР7: jQuery и чистый JavaScript</h1>
+    <p>Сравнение работы с DOM, событиями, AJAX и UI.</p>
+</header>
+
+<main>
+    <!-- СЕКЦИИ ДЛЯ ПЛАВНОЙ ПРОКРУТКИ -->
+    <section id="section-1" class="full-section section-1">
+        <h2>Секция 1</h2>
+        <p>Секция для демонстрации плавной прокрутки (Задача B).</p>
+    </section>
+
+    <section id="section-2" class="full-section section-2">
+        <h2>Секция 2</h2>
+        <p>Ещё одна секция для плавного скролла.</p>
+    </section>
+
+    <!-- ЗАДАЧА A: ВКЛАДКИ -->
+    <section id="tabs" class="block">
+        <h2>Задача A: Вкладки (табы)</h2>
+
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab-1">О нас</button>
+                <button class="tab-btn" data-tab="tab-2">Отзывы</button>
+                <button class="tab-btn" data-tab="tab-3">Контакты</button>
+            </div>
+
+            <div class="tab-content active" id="tab-1">
+                <p>Содержимое вкладки "О нас". Здесь может быть текст о компании.</p>
+            </div>
+            <div class="tab-content" id="tab-2">
+                <p>Содержимое вкладки "Отзывы". Тут можно вывести отзывы клиентов.</p>
+            </div>
+            <div class="tab-content" id="tab-3">
+                <p>Содержимое вкладки "Контакты". Адрес, телефон, карта и т.п.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЗАДАЧА C: AJAX (ЦИТАТА) -->
+    <section id="ajax" class="block">
+        <h2>Задача C: AJAX-запрос (цитата)</h2>
+
+        <button id="loadQuote">Загрузить цитату</button>
+
+        <blockquote id="quote">
+            <p>Здесь появится цитата.</p>
+            <cite>Автор</cite>
+        </blockquote>
+    </section>
+
+    <!-- ЗАДАЧА D: jQuery UI -->
+    <section id="ui" class="block">
+        <h2>Задача D: jQuery UI</h2>
+
+        <div id="draggable" class="ui-widget-content draggable-box">
+            <p>Перетащи меня (jQuery UI draggable)</p>
+        </div>
+
+        <div class="datepicker-wrapper">
+            <label for="datepicker">Выберите дату:</label>
+            <input type="text" id="datepicker" placeholder="Календарь jQuery UI">
+        </div>
+    </section>
+
+    <!-- ПРОСТАЯ ГАЛЕРЕЯ С ЭФФЕКТАМИ -->
+    <section id="gallery" class="block">
+        <h2>Галерея с эффектами (jQuery)</h2>
+
+        <div class="gallery">
+            <div class="gallery-images">
+                <img src="https://picsum.photos/seed/1/400/250" class="gallery-item active" alt="Фото 1">
+                <img src="https://picsum.photos/seed/2/400/250" class="gallery-item" alt="Фото 2">
+                <img src="https://picsum.photos/seed/3/400/250" class="gallery-item" alt="Фото 3">
+            </div>
+            <div class="gallery-controls">
+                <button id="prevImg">Назад</button>
+                <button id="nextImg">Вперёд</button>
+            </div>
+        </div>
+        <p>Галерея перелистывается с плавным эффектом (fadeIn/fadeOut).</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>Лабораторная работа 7 — jQuery vs Vanilla JS.</p>
+</footer>
+
+<!-- Скрипт -->
+<script src="script.js"></script>
+</body>
+</html>
