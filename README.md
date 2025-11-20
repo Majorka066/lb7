@@ -1,3 +1,7 @@
+<img width="1906" height="910" alt="image" src="https://github.com/user-attachments/assets/7d079a09-6b95-465e-98bb-155ae3a9d259" />
+<img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/afbb8ea8-6086-49e2-b4b2-968150bc69a5" />
+<img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/7757423f-1fce-44ca-ae2e-cfc234db2e48" />
+
 Ответы на вопросы:
 Какие jQuery-функции использовались?
 В работе использовались основные функции jQuery для работы с DOM и событиями:
